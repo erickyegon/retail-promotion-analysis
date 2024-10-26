@@ -1,183 +1,140 @@
 # Retail Promotion Analysis Project 🚀
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)  
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)  
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Key Findings](#key-findings)
-3. [Data Analysis](#data-analysis)
-4. [Technical Details](#technical-details)
-5. [Installation & Usage](#installation--usage)
-6. [Results & Insights](#results--insights)
-7. [Recommendations](#recommendations)
-8. [Contributing](#contributing)
-9. [License](#license)
-10. [Contact](#contact)
+## Table of Contents  
+1. [Project Overview](#project-overview)  
+2. [Key Findings](#key-findings)  
+3. [Data Analysis](#data-analysis)  
+4. [Technical Details](#technical-details)  
+5. [Installation & Usage](#installation--usage)  
+6. [Results & Insights](#results--insights)  
+7. [Recommendations](#recommendations)  
+8. [Contributing](#contributing)  
+9. [License](#license)  
+10. [Contact](#contact)  
 
 ## Project Overview 📋
 
-### Background
-Comprehensive analysis of retail promotional campaigns during Diwali and Sankranti festivals across South Indian cities. The project evaluates promotion effectiveness, sales performance, and revenue generation across different store locations, product categories, and promotion types.
+### Background  
+This project provides a comprehensive analysis of retail promotional campaigns during Diwali and Sankranti across South Indian cities. It evaluates the effectiveness of various promotions, sales performance, and revenue generation across store locations, product categories, and promotion types.
 
-### Business Problem
-* Evaluate campaign effectiveness across multiple dimensions
-* Understand geographic and category-wise performance variations
-* Identify optimal promotion types
-* Analyze price-sales relationships
+### Business Problem  
+- Evaluate the effectiveness of campaigns across different dimensions.  
+- Understand geographic and category-wise performance variations.  
+- Identify optimal promotion types.  
+- Analyze the relationship between pricing and sales.
 
-### Scope
-* **Geographic Coverage**: 10 major South Indian cities
-* **Categories**: Grocery & Staples, Home Care, Personal Care, Home Appliances, Combo
-* **Promotion Types**: BOGOF, Cashback, Percentage Discounts
-* **Time Period**: Festival seasons (Diwali and Sankranti)
+### Scope  
+- **Geographic Coverage**: 10 major South Indian cities  
+- **Categories**: Grocery & Staples, Home Care, Personal Care, Home Appliances, and Combo products  
+- **Promotion Types**: BOGOF (Buy One Get One Free), Cashback, Percentage Discounts  
+- **Time Period**: Diwali and Sankranti festival seasons  
 
 ## Key Findings 📊
 
-### Store Distribution Analysis
-* Bengaluru: 20% (10 stores)
-* Chennai: 16% (8 stores)
-* Hyderabad: 14% (7 stores)
-* Other cities: 50% combined
+### Store Distribution Analysis  
+![Store Distribution](images/store_distribution.png)  
 
-### Promotion Performance
-```python
-promotion_metrics = {
-    'BOGOF': {
-        'unit_growth': '262.8%',
-        'revenue_growth': '74.1%'
-    },
-    'Cashback': {
-        'unit_growth': '167.4%',
-        'revenue_growth': '122.8%'
-    }
-}
-```
+### Promotion Performance  
+![Promotion Performance](images/hyderabad_promo_analysis.png)  
 
-### Category Distribution (Sankranti)
-1. Grocery & Staples: 70.5%
-2. Home Appliances: 14.1%
-3. Home Care: 6.7%
-4. Combo1: 4.9%
-5. Personal Care: 3.7%
+### Category Performance (Sankranti)  
+![Category Performance](images/sankranti_sales_analysis.png)  
+
+1. **Grocery & Staples**: 70.5%  
+2. **Home Appliances**: 14.1%  
+3. **Home Care**: 6.7%  
+4. **Combo1**: 4.9%  
+5. **Personal Care**: 3.7%  
 
 ## Data Analysis 📈
 
-### Key Performance Indicators
-1. **ISU% (Incremental Sold Units Percentage)**
-   ```python
-   def calculate_isu(before, after):
-       return ((after - before) / before) * 100
-   ```
+### Key Performance Indicators  
+1. **ISU% (Incremental Sold Units Percentage)** – Measure of sold units' growth.  
+2. **IR% (Incremental Revenue Percentage)** – Measure of revenue growth.  
 
-2. **IR% (Incremental Revenue Percentage)**
-   ```python
-   def calculate_ir(revenue_before, revenue_after):
-       return ((revenue_after - revenue_before) / revenue_before) * 100
-   ```
+### Price Sensitivity Analysis  
+![Price Sensitivity](images/price_quantity_analysis.png)  
 
-## Technical Details 🛠️
-
-### Dependencies
-```
-pandas==1.5.3
-numpy==1.23.5
-matplotlib==3.7.1
-seaborn==0.12.2
-plotly==5.13.1
-jupyter==1.0.0
-```
-
-### Project Structure
-```
-retail-analysis/
-│
-├── data/
-│   ├── raw/                 # Original data files
-│   └── processed/           # Cleaned data files
-│
-├── notebooks/
-│   ├── 1.0-data-cleaning.ipynb
-│   ├── 2.0-exploratory-analysis.ipynb
-│   └── 3.0-promotion-analysis.ipynb
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_processing.py
-│   ├── analysis.py
-│   └── visualization.py
-│
-└── README.md
-```
+---
 
 ## Installation & Usage 💻
 
-### Setup
-```bash
-# Clone repository
-git clone https://github.com/yourusername/retail-promotion-analysis.git
+### Setup  
+1. Clone the repository:  
+   `git clone https://github.com/yourusername/retail-promotion-analysis.git`  
+2. Create a virtual environment:  
+   - Linux/Mac: `source venv/bin/activate`  
+   - Windows: `venv\Scripts\activate`  
+3. Install dependencies:  
+   `pip install -r requirements.txt`  
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-```
+---
 
 ## Results & Insights 🎯
 
-### Revenue Impact
-* Overall revenue growth: 81.3%
-* Category-wise performance:
-  * Combo1: 141.7% growth
-  * Home Appliances: 88.3% growth
-  * Personal Care: -32.4% decline
+### Revenue Impact  
+![Revenue Impact](images/bengaluru_revenue_analysis.png)  
 
-### Promotion Effectiveness
-* BOGOF: Best for unit sales growth
-* Cashback: Optimal for revenue growth
-* Percentage discounts: Underperforming
+- **Overall revenue growth**: 81.3%  
+- **Category Performance**:  
+  - **Combo1**: 141.7% growth  
+  - **Home Appliances**: 88.3% growth  
+  - **Personal Care**: -32.4% decline  
 
-### Price Sensitivity Analysis
-* Strong base price consistency (0.98 correlation)
-* Weak price-quantity relationship (0.27 correlation)
-* Moderate promotional impact (0.77 correlation)
+### Promotion Effectiveness  
+- **BOGOF**: Best for unit sales growth  
+- **Cashback**: Optimal for revenue growth  
+- **Percentage Discounts**: Underperforming  
+
+---
 
 ## Recommendations 💡
 
-### Immediate Actions (0-3 months)
-1. Optimize promotion mix
-   * Expand BOGOF and Cashback
-   * Phase out underperforming discounts
-   * Implement category-specific strategies
+### Immediate Actions (0-3 Months)  
+1. **Optimize Promotion Mix**  
+   - Expand BOGOF and Cashback promotions  
+   - Phase out underperforming discounts  
+   - Implement category-specific strategies  
 
-2. Geographic Focus
-   * Target high-potential markets
-   * Address underperforming stores
-   * Customize local strategies
+2. **Geographic Focus**  
+   - Target high-potential markets  
+   - Address underperforming stores  
+   - Customize local promotional strategies  
 
-### Long-term Strategy (3+ months)
-1. Store Network Optimization
-2. Category Mix Enhancement
-3. Pricing Strategy Refinement
-
-## Contributing 🤝
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact 📧
-Dr.Erick Kiprotich Yegon - [erickkiprotichyegon61@gmail.com](erickkiprotichyegon61@gmail.com)
-
-Project Link: [https://github.com/erickyegon/retail-promotion-analysis](https://github.com/erickyegon/retail-promotion-analysis)
+### Long-Term Strategy (3+ Months)  
+1. **Optimize Store Network**  
+2. **Enhance Category Mix**  
+3. **Refine Pricing Strategy**  
 
 ---
+
+## Contributing 🤝
+
+1. Fork the repository  
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)  
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)  
+4. Push to the branch (`git push origin feature/AmazingFeature`)  
+5. Open a pull request  
+
+---
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  
+
+---
+
+## Contact 📧
+
+**Dr. Erick Kiprotich Yegon**  
+[erickkiprotichyegon61@gmail.com](mailto:erickkiprotichyegon61@gmail.com)  
+
+Project Link: [https://github.com/yourusername/retail-promotion-analysis](https://github.com/yourusername/retail-promotion-analysis)  
+
+---
+
 © 2024 Retail Promotion Analysis Project. All Rights Reserved.
