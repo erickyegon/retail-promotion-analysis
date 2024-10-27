@@ -13,7 +13,6 @@
 10. [Contact](#contact)  
 
 ## Project Overview 📋
-
 ### Background  
 This project provides a comprehensive analysis of retail promotional campaigns during Diwali and Sankranti across South Indian cities. It evaluates the effectiveness of various promotions, sales performance, and revenue generation across store locations, product categories, and promotion types.
 
@@ -30,9 +29,8 @@ This project provides a comprehensive analysis of retail promotional campaigns d
 - **Time Period**: Diwali and Sankranti festival seasons  
 
 ## Key Findings 📊
-
 ### Store Distribution Analysis  
-![Store Distribution](images/store_distribution.png)  
+![Store Distribution](images/category_distribution_analysis.png)  
 
 ### Promotion Performance  
 ![Promotion Performance](images/hyderabad_promo_analysis.png)  
@@ -47,7 +45,6 @@ This project provides a comprehensive analysis of retail promotional campaigns d
 5. **Personal Care**: 3.7%  
 
 ## Data Analysis 📈
-
 ### Key Performance Indicators  
 1. **ISU% (Incremental Sold Units Percentage)** – Measure of sold units' growth.  
 2. **IR% (Incremental Revenue Percentage)** – Measure of revenue growth.  
@@ -55,8 +52,13 @@ This project provides a comprehensive analysis of retail promotional campaigns d
 ### Price Sensitivity Analysis  
 ![Price Sensitivity](images/price_quantity_analysis.png)  
 
-## Results & Insights 🎯
+### Price-Quantity Correlation
+![Price Quantity Correlation](images/price_quantity_correlation.png)
 
+### Price-Quantity Scatter Plot
+![Price Quantity Scatter](images/price_quantity_scatter.png)
+
+## Results & Insights 🎯
 ### Revenue Impact  
 ![Revenue Impact](images/bengaluru_revenue_analysis.png)  
 
@@ -71,10 +73,7 @@ This project provides a comprehensive analysis of retail promotional campaigns d
 - **Cashback**: Optimal for revenue growth  
 - **Percentage Discounts**: Underperforming  
 
----
-
 ## Recommendations 💡
-
 ### Immediate Actions (0-3 Months)  
 1. **Optimize Promotion Mix**  
    - Expand BOGOF and Cashback promotions  
@@ -91,31 +90,13 @@ This project provides a comprehensive analysis of retail promotional campaigns d
 2. **Enhance Category Mix**  
 3. **Refine Pricing Strategy**  
 
----
+## Installation & Usage
+```bash
+# Clone the repository
+git clone https://github.com/erickyegon/retail-promotion-analysis.git
 
-## Contributing 🤝
+# Navigate to project directory
+cd retail-promotion-analysis
 
-1. Fork the repository  
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)  
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)  
-4. Push to the branch (`git push origin feature/AmazingFeature`)  
-5. Open a pull request  
-
----
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  
-
----
-
-## Contact 📧
-
-**Dr. Erick Kiprotich Yegon**  
-[erickkiprotichyegon61@gmail.com](mailto:erickkiprotichyegon61@gmail.com)  
-
-Project Link: https://github.com/erickyegon/retail-promotion-analysis](https://github.com/erickyegon/retail-promotion-analysis)  
-
----
-
-© 2024 Retail Promotion Analysis Project. All Rights Reserved.
+# Install required dependencies
+pip install -r requirements.txt
