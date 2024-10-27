@@ -30,13 +30,13 @@ This project provides a comprehensive analysis of retail promotional campaigns d
 
 ## Key Findings 📊
 ### Store Distribution Analysis  
-![Store Distribution](images/category_distribution_analysis.png)  
+<img src="images/category_distribution_analysis.png" alt="Store Distribution Analysis"/>
 
 ### Promotion Performance  
-![Promotion Performance](images/hyderabad_promo_analysis.png)  
+<img src="images/hyderabad_promo_analysis.png" alt="Promotion Performance"/>
 
 ### Category Performance (Sankranti)  
-![Category Performance](images/sankranti_sales_analysis.png)  
+<img src="images/sankranti_sales_analysis.png" alt="Category Performance"/>
 
 1. **Grocery & Staples**: 70.5%  
 2. **Home Appliances**: 14.1%  
@@ -50,17 +50,17 @@ This project provides a comprehensive analysis of retail promotional campaigns d
 2. **IR% (Incremental Revenue Percentage)** – Measure of revenue growth.  
 
 ### Price Sensitivity Analysis  
-![Price Sensitivity](images/price_quantity_analysis.png)  
+<img src="images/price_quantity_analysis.png" alt="Price Sensitivity Analysis"/>
 
 ### Price-Quantity Correlation
-![Price Quantity Correlation](images/price_quantity_correlation.png)
+<img src="images/price_quantity_correlation.png" alt="Price Quantity Correlation"/>
 
 ### Price-Quantity Scatter Plot
-![Price Quantity Scatter](images/price_quantity_scatter.png)
+<img src="images/price_quantity_scatter.png" alt="Price Quantity Scatter"/>
 
 ## Results & Insights 🎯
 ### Revenue Impact  
-![Revenue Impact](images/bengaluru_revenue_analysis.png)  
+<img src="images/bengaluru_revenue_analysis.png" alt="Revenue Impact"/>
 
 - **Overall revenue growth**: 81.3%  
 - **Category Performance**:  
